@@ -118,6 +118,7 @@ window.addEventListener('load', function(){
             this.bacon = [];
             this.enemies = [];
             this.score = 0;
+            this.player.y = game.height;
             this.gameStart = true;
         }   
 
@@ -163,10 +164,21 @@ window.addEventListener('load', function(){
         game.gameStartFunc();
     })
 
+    this.window.addEventListener("keypress", function(e) {
+        if (e.key === 'Enter'){
+            game.gameStartFunc();
+        }
+    })
     // Reset Button
 
     restartButton.addEventListener("click", function() {
         game.gameResetFunc();
+   })
+
+   this.window.addEventListener("keypress", function(e) {
+    if (game.player.gameOver === true && e.key === 'Enter'){
+        game.gameResetFunc();
+    }
    })
 
 });
