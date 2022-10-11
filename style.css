@@ -1,0 +1,81 @@
+* {
+    font-family: 'Press Start P2';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Press Start P2';
+    src: url('PressStart2P-Regular.woff') format('woff'),
+        url('PressStart2P-Regular.woff2') format('woff2');
+
+}
+
+
+#canvas1 {
+    border: 5px solid black;
+    position: absolute;
+}
+
+#player, #fence, #bacon {
+    display: none;
+}
+
+#container
+{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.restart {
+    border: none;
+    margin-left: 126px;
+    margin-top: 350px;
+    height: 80px;
+    width: 250px;
+    background-color: white;
+    font-size: 30px;
+    display: none;
+    position: absolute;
+}
+
+.start {
+    border: none;
+    margin-left: 126px;
+    margin-top: 300px;
+    height: 80px;
+    width: 250px;
+    background-color: white;
+    font-size: 30px;
+    display: none;
+    position: absolute;
+}
+
+.github {
+    border: none;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 26px;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.portfolio {
+    border: none;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 378px;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
